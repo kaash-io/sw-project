@@ -29,4 +29,14 @@ Above command will generate output at Stdout.
 
 2. Use Docker image
 
-TBD
+Pull docker image kaashio/nasa-log-analyzer from docker hub
+
+https://hub.docker.com/repository/docker/kaashio/nasa-log-analyzer
+
+Run docker container like below (change last number as needed) -
+
+```
+docker run -it --rm kaashio/nasa-log-analyzer ftp://ita.ee.lbl.gov/traces/NASA_access_log_Jul95.gz 7
+```
+
+Last two arguments are optional. 
